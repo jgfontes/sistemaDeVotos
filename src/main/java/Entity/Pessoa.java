@@ -38,6 +38,18 @@ public class Pessoa implements Serializable {
         return candidato;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
     @Override
     public String toString() {
         return "Pessoa{" +

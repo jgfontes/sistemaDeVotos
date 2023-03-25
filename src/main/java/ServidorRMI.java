@@ -37,7 +37,6 @@ public class ServidorRMI extends UnicastRemoteObject implements InterfVotacao{
 
     @Override
     public void fecharUrna(List<Pessoa> votosUrna) {
-        System.out.println("ENTRANDO NO MÉTODO FECHAR URNA");
         totalVotos.addAll(votosUrna);
     }
 
@@ -48,6 +47,5 @@ public class ServidorRMI extends UnicastRemoteObject implements InterfVotacao{
             System.out.println(contaVontantes);
         });
         System.out.println("=====================");
-
     }
 }
